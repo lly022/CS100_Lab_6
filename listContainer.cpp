@@ -19,12 +19,16 @@ void ListContainer::print() {
 }
 
 void ListContainer::sort() {
-	if(sort_function != nullptr) {
-		sort_function->sort(this); 
+	try{
+		if(sort_function == nullptr) {
+			throw 1; 
+		}
 	}
-	else {
-		cout << "Add throw exception" << endl;
+	catch (int x){
+		cout << "ERROR: sort_function hasn't been set yet" << endl;
+		exit(EXIT_FAILURE);
 	}
+	sort_function->sort(this);
 }
 
 void ListContainer::swap(int i ,int j){
