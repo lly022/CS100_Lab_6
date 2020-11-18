@@ -22,5 +22,13 @@ ADD_EXECUTABLE(print2
         VectorContainer.cpp
 )
 
+ADD_EXECUTABLE(test2
+	main2.cpp
+	VectorContainer.cpp
+	listContainer.cpp
+	BubbleSort.cpp
+	selection_sort.cpp
+)
+
 TARGET_LINK_LIBRARIES(test gtest)
 TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
