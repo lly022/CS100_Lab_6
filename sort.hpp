@@ -8,7 +8,9 @@ class Container;
 class Sort {
     public:
         /* Constructors */
+	 //Make sure you implement the default constructor inside the Sort class and not the subclasses as they will be using the default constructor
         Sort() { };
+
 
         /* Pure Virtual Functions */
         virtual void sort(Container* container) = 0;
