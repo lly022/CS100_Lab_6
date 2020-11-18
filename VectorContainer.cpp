@@ -3,6 +3,9 @@
 VectorContainer::VectorContainer(){
 } 
 
+VectorContainer::VectorContainer(Sort* function){
+} 
+
 void VectorContainer::add_element(Base* element){
 	VectContainer.push_back(element);
 }

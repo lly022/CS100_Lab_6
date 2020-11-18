@@ -12,6 +12,8 @@ class VectorContainer : public Container{
 	public:
 		VectorContainer();
 
+		VectorContainer(Sort* function); 
+
 		void add_element(Base* element);
 
 		void print();
