@@ -6,7 +6,6 @@ SET(CMAKE_CXX_STANDARD 11)
 
 ADD_EXECUTABLE(test
    listContainer.cpp
-   container_unit_test.cpp
    VectorContainer.cpp
    container_unit_test.cpp
 )
