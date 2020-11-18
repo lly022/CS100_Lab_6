@@ -7,6 +7,7 @@ SET(CMAKE_CXX_STANDARD 11)
 ADD_EXECUTABLE(test
    listContainer.cpp
    VectorContainer.cpp
+   BubbleSort.cpp
    container_unit_test.cpp
 )
 
