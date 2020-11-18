@@ -9,6 +9,7 @@ ADD_EXECUTABLE(test
    VectorContainer.cpp
    BubbleSort.cpp
    container_unit_test.cpp
+   selection_sort.cpp
 )
 
 ADD_EXECUTABLE(print1
