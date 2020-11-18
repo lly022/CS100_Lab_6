@@ -7,12 +7,15 @@ SET(CMAKE_CXX_STANDARD 11)
 ADD_EXECUTABLE(test
    listContainer.cpp
    container_unit_test.cpp
-   
+   VectorContainer.cpp
+   container_unit_test.cpp
 )
 
 ADD_EXECUTABLE(print
-   print_test.cpp
-   listContainer.cpp
+	vectorContainerPrint_test.cpp
+	VectorContainer.cpp
+  print_test.cpp
+  listContainer.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

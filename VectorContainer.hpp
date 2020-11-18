@@ -1,41 +1,32 @@
+#ifndef __VECTORCONTAINER_HPP__
+#define __VECTORCONTAINER_HPP__
+
 #include "container.hpp"
 #include "base.hpp"
 #include <vector>
+#include <iostream>
 
 class VectorContainer : public Container{
 	protected:
-		vector <Base*> VectContainer;
+		std::vector <Base*> VectContainer;
 	public:
-		VectorContainer() : Container(){
-		}
-		
-		void set_sort_function(Sort* sort_function){
-			this->sort_function = sort_function;
-		}
+		VectorContainer();
 
-		void add_element(Base* element){
-			VectContainer.push_back(element);
-		}
+		VectorContainer(Sort* function); 
 
-		void print(){
-			for(int i = 0; i < VectContainer.size(); i++){
-				VectContainer[i]->stringify();
-			}
-		}
+		void add_element(Base* element);
 
-		void sort(){
-			
-		}
+		void print();
 
-		void swap(int i, int j){
-		}
+		void sort();
 
-		Base* at(int i){
-			
-		}
+		//Functions needed to sort because the sort functions must use this homogeneous interface
+		void swap(int i, int j);
 
-		int size(){
-			return VectContainer.size();
-		}	
+		Base* at(int i);
+
+		int size();
 		
 };
+
+#endif //__VECTORCONTAINER_HPP__

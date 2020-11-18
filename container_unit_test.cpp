@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-
+#include "VectorContainer_test.hpp"
 #include "list_test.hpp"
 
 int main(int argc, char **argv){
