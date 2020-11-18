@@ -10,11 +10,14 @@ ADD_EXECUTABLE(test
    container_unit_test.cpp
 )
 
-ADD_EXECUTABLE(print
-	vectorContainerPrint_test.cpp
-	VectorContainer.cpp
+ADD_EXECUTABLE(print1
   print_test.cpp
   listContainer.cpp
+)
+
+ADD_EXECUTABLE(print2
+        vectorContainerPrint_test.cpp
+        VectorContainer.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

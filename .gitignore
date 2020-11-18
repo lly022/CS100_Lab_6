@@ -6,3 +6,6 @@ cmake_install.cmake
 lib
 lab
 print
+print1
+print2
+
