@@ -5,11 +5,13 @@ ADD_SUBDIRECTORY(googletest)
 SET(CMAKE_CXX_STANDARD 11) 
 
 ADD_EXECUTABLE(test
-    unit_test.cpp
+   VectorContainer.cpp
+   container_unit_test.cpp
 )
 
-ADD_EXECUTABLE(lab
-    main.cpp
+ADD_EXECUTABLE(print
+	vectorContainerPrint_test.cpp
+	VectorContainer.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
